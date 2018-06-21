@@ -14,7 +14,17 @@ public class Validation {
 		
 		Random randomMaker = new Random();
 		
-		int randomNumber = randomMaker.nextInt(5);
+		int randomNumber = randomMaker.nextInt(5)+1;
+		
+		if (randomNumber == 1 ) {
+			JOptionPane.showMessageDialog(null, "Don't worry, you look great.");
+		} else if (randomNumber == 2) {
+			JOptionPane.showMessageDialog(null, "Walk tall. You're doing just fine.");
+		} else if (randomNumber == 3 ) {
+			JOptionPane.showMessageDialog(null, "Dont let anybody look down on you!");
+		} else if (randomNumber == 4) {
+			JOptionPane.showMessageDialog(null, "You have a great personality.");
+		}
 		
 		// 2. On paper, write all the numbers that get printed when you run this class 10 times
 		
